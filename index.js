@@ -45,11 +45,26 @@
 // }
 
 
-let result = 1;
-let counter =  0;
-while (counter < 10) {
-    result = result * 2;
-    counter = counter + 1;
+// let result = 1;
+// let counter =  0;
+// while (counter < 10) {
+//     result = result * 2;
+//     counter = counter + 1;
+// }
+// console.log(result);
+// console.log(counter);
+
+
+// let yourName;
+// do {
+//     yourName = prompt("who are you?");
+// } while (!yourName);
+// console.log(yourName);
+
+
+if (false != true) {
+    console.log("That makes sense");
+    if (1 < 2) {
+        console.log("No surprise there");
+    }
 }
-console.log(result);
-console.log(counter);
