@@ -37,9 +37,19 @@
 
 // Math.max(2, 4);
 
-let theNumber = Number(prompt("Pick a number"))
-if(!Number.isNaN(theNumber)) {
-    console.log("Your number is the square root of " + theNumber * theNumber);
-} else {
-    console.log("hey, give a number");
+// let theNumber = Number(prompt("Pick a number"))
+// if(!Number.isNaN(theNumber)) {
+//     console.log("Your number is the square root of " + theNumber * theNumber);
+// } else {
+//     console.log("hey, give a number");
+// }
+
+
+let result = 1;
+let counter =  0;
+while (counter < 10) {
+    result = result * 2;
+    counter = counter + 1;
 }
+console.log(result);
+console.log(counter);
