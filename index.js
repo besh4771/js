@@ -100,6 +100,19 @@
 // }
 
 
-for (let line = "*"; line.length < 8; line += "*") {
-    console.log(line);
+// for (let line = "*"; line.length < 8; line += "*") {
+//     console.log(line);
+// }
+
+
+let i;
+let j;
+for (i = 0; i <= 5; i++){
+    document.write("</br>");
+    for (j = 0; j < 6 - i; j++){
+        document.write("&nbsp&nbsp");
+        for (j = 6 - i; j <= 5; j++){
+            document.write("*");
+        }
+    }
 }
