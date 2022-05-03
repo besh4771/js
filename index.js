@@ -178,3 +178,23 @@ const hummus = function(factor) {
     ingredient(0.5, "teaspoon", "cumin");
 
 };
+
+// Arrow functions
+const powar = (base, exponent) => {
+    let result = 1;
+    for (count = 0; count < exponent; count++) {
+        result *= base;
+
+    }
+    return result;
+};
+
+const horn = () => {
+    console.log("Toot");
+};
+
+function greet(who){
+    console.log("Helllo " + who);
+}
+greet("Harry");
+console.log("Bye");
