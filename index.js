@@ -84,17 +84,22 @@
 // }
     
 
-switch (prompt("what is the weather like?")){
-    case "rainy":
-        console.log("remember to bring umbrella");
-        break;
-    case "sunny":
-        console.log("Dress lightly");
-        break;
-    case "cloudy":
-        console.log("Go outside");
-        break;
-    default:
-        console.log("unknown weather type!");
-        break;
+// switch (prompt("what is the weather like?")){
+//     case "rainy":
+//         console.log("remember to bring umbrella");
+//         break;
+//     case "sunny":
+//         console.log("Dress lightly");
+//         break;
+//     case "cloudy":
+//         console.log("Go outside");
+//         break;
+//     default:
+//         console.log("unknown weather type!");
+//         break;
+// }
+
+
+for (let line = "*"; line.length < 8; line += "*") {
+    console.log(line);
 }
