@@ -130,3 +130,17 @@
 //     return result;
 // }
 // console.log(leftTriangle(5));
+
+
+const square = function(x) {
+    return x * x;
+};
+
+console.log(square(12));
+
+const makeNoise = function(){
+    console.log("pling!");
+
+}
+makeNoise();
+
