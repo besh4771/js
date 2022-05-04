@@ -207,3 +207,32 @@ function getTask() {
 function rememberUgently(task) {
     todoList.unshift(task)
 }
+
+
+function max(...numbers) {
+    let result = -Infinity;
+    for (let number of numbers) {
+        if (number > result) result = number;
+    }
+    return result;
+}
+console.log(max(4, 1, 9, -2));
+
+
+let words = ["never", "fully"];
+console.log(["will", ...words, "understand"]);
+
+
+function randomPointOnCircle(radius){
+    let angle = math.random() * 2 * Math.PI;
+    return {x: radius * Math.cos(angle),
+    y: radius * Math.sin(angle)};
+}
+console.log(randomPointOnCircle(2));
+
+
+// JSON File format
+{
+    "squirrell": false,
+    "eventss": ["work", "touched tree", "pizza"]
+}
