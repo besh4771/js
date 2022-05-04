@@ -164,6 +164,33 @@ function tableFor(event, journal) {
 console.log(tableFor("pizza", JOURNAL));
 
 
+for (let i = 0; i < JOURNAL.length; i++){
+    let entry = JOURNAL[i];
+}
 
 
-    
+for (let entry of JOURNAL) {
+    console.log(`${entry.events.length} events`);
+}
+
+
+function journalEvents(journal) {
+    let events = [];
+    for (let entry of journal) {
+        for (let event of entry.events) {
+            if (!events.includes(event)) {
+                events.push(event);
+            }
+        }
+    }
+    return events;
+
+}
+console.log(journalEvents(JOURNAL));
+
+for (let event of journalEvents(JOURNAL)){
+    let correlation = phi(tableFor(event, JOURNAL));
+    if (correlation > 0.1 || correlation < -0.1) {
+        console.log(event + ":", correlation);
+    }
+}
