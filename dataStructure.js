@@ -194,3 +194,16 @@ for (let event of journalEvents(JOURNAL)){
         console.log(event + ":", correlation);
     }
 }
+
+
+
+let todoList = [];
+function remember(task) {
+    todoList.push(task);
+}
+function getTask() {
+    return todoList.shift();
+}
+function rememberUgently(task) {
+    todoList.unshift(task)
+}
