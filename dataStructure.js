@@ -231,8 +231,10 @@ function randomPointOnCircle(radius){
 console.log(randomPointOnCircle(2));
 
 
-// JSON File format
-{
-    "squirrell": false,
-    "eventss": ["work", "touched tree", "pizza"]
-}
+// // JSON File format
+// {
+//     "squirrell": false,
+//     "eventss": ["work", "touched tree", "pizza"]
+// }
+// JSON.stringify
+// JSON.parse
