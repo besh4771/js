@@ -65,3 +65,14 @@ function map(array, transform) {
 }
 let rtlScripts = SCRIPTS.filter(s => s.direction == "rtl");
 console.log(map(rtlScripts, s => s.name));
+
+
+function reduce(array, combine, start) {
+    let current = start;
+    for (let element of array) {
+        current = combine(current, element);
+    }
+    return current;
+}
+console.log(reduce([1, 2, 3, 4], (a, b) => a + b, 0));
+    
