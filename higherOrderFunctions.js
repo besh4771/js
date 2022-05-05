@@ -32,3 +32,36 @@ function noisy(f) {
     };
 }
 noisy(Math.min)(3, 2, 1);
+
+// {
+//     name: "Coptic",
+//     ranges: [[994, 1008], [11392, 11508], [11513, 11520]],
+//     direction: "ltr",
+//     year: -200,
+//     living: false,
+//     link: "https://en.wikipedia.org/wiki/Coptic_alphabet"
+// }
+
+
+// filtering arrays
+function filter(array, test) {
+    let passed = [];
+    for (let element of array) {
+        if (test(element)) {
+            passed.push(element);
+        }
+    }
+    return passed;
+}
+console.log(filter(SCRIPTS, script => script.living));
+
+
+function map(array, transform) {
+    let mapped = [];
+    for(let element of array) {
+        mapped.push(transform(element));
+    }
+    return mapped
+}
+let rtlScripts = SCRIPTS.filter(s => s.direction == "rtl");
+console.log(map(rtlScripts, s => s.name));
