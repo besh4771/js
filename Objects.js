@@ -22,3 +22,12 @@ let protoRabbit = {
 let killerRabbit = Object.create(protoRabbit);
 killerRabbit.type = "killer";
 killerRabbit.speak("SKREEEE!");
+
+
+console.log(Object.getPrototypeOf(Math.max) ==
+Function.prototype);
+// → true
+console.log(Object.getPrototypeOf([]) ==
+Array.prototype);
+// → true
+
