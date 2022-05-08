@@ -14,3 +14,11 @@ whiteRabbit.speak("Oh my ears and whiskers, " + "how late it's getting!");
 hungryRabbit.speak("I could use a carrot right now.");
 
 
+let protoRabbit = {
+    speak(line) {
+        console.log(`The ${this.type} rabbit says '${line}'`);
+    }
+}
+let killerRabbit = Object.create(protoRabbit);
+killerRabbit.type = "killer";
+killerRabbit.speak("SKREEEE!");
