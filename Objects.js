@@ -31,3 +31,11 @@ console.log(Object.getPrototypeOf([]) ==
 Array.prototype);
 // → true
 
+
+function makeRabbit (type) {
+    let rabbit = Object.create(protoRabbit);
+    rabbit.type = type;
+    return rabbit;
+}
+
+
